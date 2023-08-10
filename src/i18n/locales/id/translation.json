@@ -942,9 +942,11 @@
   },
   "permissions": {
     "nostr": {
-      "nip04decrypt": "Dekripsi data.",
       "getpublickey": "Membaca kunci publik Anda.",
-      "nip04encrypt": "Enkripsi data."
+      "nip04decrypt": "Dekripsi data.",
+      "nip04encrypt": "Enkripsi data.",
+      "nip44decrypt": "Dekripsi data.",
+      "nip44encrypt": "Enkripsi data."
     },
     "commando": {
       "decode": "Decode teks bolt11/bolt12/rune."

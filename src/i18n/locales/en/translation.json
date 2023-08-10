@@ -1079,6 +1079,8 @@
       "getpublickey": "Read your public key.",
       "nip04encrypt": "Encrypt data.",
       "nip04decrypt": "Decrypt data.",
+      "nip44encrypt": "Encrypt data.",
+      "nip44decrypt": "Decrypt data.",
       "signmessage": "Sign message with your key."
     },
     "commando": {

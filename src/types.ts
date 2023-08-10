@@ -540,6 +540,23 @@ export interface MessageDecryptGet extends MessageDefault {
   action: "decrypt";
 }
 
+export interface Nip44MessageEncryptGet extends MessageDefault {
+  args: {
+    peer: string;
+    plaintext: string;
+    v: 1;
+  };
+  action: "encrypt";
+}
+
+export interface Nip44MessageDecryptGet extends MessageDefault {
+  args: {
+    peer: string;
+    payload: string;
+  };
+  action: "decrypt";
+}
+
 export interface MessageBalanceGet extends MessageDefault {
   action: "getBalance";
 }
@@ -686,6 +703,8 @@ export enum PermissionMethodNostr {
   NOSTR_GETPUBLICKEY = "nostr/getPublicKey",
   NOSTR_NIP04DECRYPT = "nostr/nip04decrypt",
   NOSTR_NIP04ENCRYPT = "nostr/nip04encrypt",
+  NOSTR_NIP44DECRYPT = "nostr/nip44decrypt",
+  NOSTR_NIP44ENCRYPT = "nostr/nip44encrypt",
 }
 
 export interface DbPermission {
